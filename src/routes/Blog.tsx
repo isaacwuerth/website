@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import './Blog.css'
+import './Blog.sass'
 import { Link } from 'react-router-dom'
 import lorem from '../util/lorem'
 
