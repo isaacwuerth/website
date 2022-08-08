@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import Blog from './routes/Blog'
@@ -10,14 +10,14 @@ import Blogcontent from './components/blog/Blogcontent'
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/' element={<App />}>
           <Route path='blog' element={<Blog />} />
           <Route path='blog/:postid' element={<Blogcontent />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
 )
 
