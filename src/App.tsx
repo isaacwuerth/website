@@ -36,7 +36,7 @@ function App() {
         <div className='app-header-logo'>IW</div>
         <ul id='app-nav'>
           {navigation.map((value) => (
-            <li>
+            <li key={value.title}>
               <Link to={value.path}>{value.title}</Link>
             </li>
           ))}
