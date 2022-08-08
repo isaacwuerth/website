@@ -1,5 +1,5 @@
 {
-  "homepage": "https://isaacwuerth.github.io/",
+  "homepage": "https://isaacwuerth.github.io/website",
   "name": "isaacwuerth",
   "version": "0.1.0",
   "private": true,
@@ -28,6 +28,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:all": "npm test -- --watchAll=false",
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
